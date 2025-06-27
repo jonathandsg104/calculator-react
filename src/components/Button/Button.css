@@ -1,0 +1,65 @@
+/*
+  Estilos dos botões da calculadora.
+  - Botões arredondados, gradiente, sombra e transições para efeito moderno.
+*/
+.button {
+  border: none;
+  padding: 18px;
+  font-size: 1.3rem;
+  border-radius: 50px;
+  cursor: pointer;
+  background: linear-gradient(145deg, #f5f6fa, #dfe6e9);
+  color: #2d3436;
+  transition: all 0.2s ease;
+  font-weight: 500;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Efeito ao passar o mouse */
+.button:hover {
+  background: linear-gradient(145deg, #ffffff, #dfe6e9);
+  transform: translateY(-3px);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+}
+
+/* Efeito ao clicar */
+.button:active {
+  transform: translateY(1px);
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* Botões de operador (/, *, -, +) */
+.operator {
+  background: linear-gradient(145deg, #f39c12, #e67e22);
+  color: white;
+}
+
+.operator:hover {
+  background: linear-gradient(145deg, #f5b041, #e67e22);
+}
+
+/* Botão de igual */
+.equals {
+  background: linear-gradient(145deg, #2ecc71, #27ae60);
+  color: white;
+  grid-column: span 2;
+}
+
+.equals:hover {
+  background: linear-gradient(145deg, #58d68d, #27ae60);
+}
+
+/* Botão zero ocupa duas colunas */
+.zero {
+  grid-column: span 2;
+}
+
+/* Botão de limpar */
+.clear {
+  background: linear-gradient(145deg, #e74c3c, #c0392b);
+  color: white;
+}
+
+.clear:hover {
+  background: linear-gradient(145deg, #ec7063, #c0392b);
+}
